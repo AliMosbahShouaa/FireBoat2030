@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Fireboat</title>
+    <link rel="stylesheet" href="./assest/bootstrap/css/bootstrap.min.css" />
+    <script src="./assest/bootstrap/js/bootstrap.min.js "></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/all.min.css"
+        integrity="sha512-ioRJH7yXnyX+7fXTQEKPULWkMn3CqMcapK0NNtCN8q//sW7ZeVFcbMJ9RvX99TwDg6P8rAH2IqUSt2TLab4Xmw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="">
+
+    <script src="js/index.js"></script>
+    <script type="text/javascript" src="https://smtpjs.com/v3/smtp.js"></script>
+
+</head>
+
+<body>
+    <header class="Header-Two">
+        <div class="container-cover">
+            <!-- <video class="w-100 m-0 p-0" autoplay muted loop >
+                <source src="./video/j-1.mov" type="video/mp4">
+            </video> -->
+            <img src="./image/DSC_3916.jpg" alt="Avatar" class="image">
+            <!-- <img class="test-img" src="./image/logo.png"> -->
+
+            <div class="overlay-cover">
+                <nav class="navbar navbar-expand-lg bg-light">
+                    <div class="container-fluid ">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link " aria-current="page" href="Home.html">Home</a>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle " role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Experience
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="Ride.html">The Ride</a></li>
+                                        <li><a class="dropdown-item" href="Comfort.html">Comfortably safe</a></li>
+                                        <li><a class="dropdown-item" href="Faq.html">FAQs</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle active" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        About
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="Crew.html">Crew</a></li>
+
+                                        <li><a class="dropdown-item" href="Gallery.html">Gallery</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Branch
+                                    </a>
+                                    <ul class="dropdown-menu">
+
+                                        <li><a class="dropdown-item" href="Jeddah.html">Jeddah</a></li>
+                                        <li><a class="dropdown-item" href="Dubai.html">Dubai</a></li>
+
+                                        <li><a class="dropdown-item" href="AbuDhabi.html">Abou Dhabi</a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="Price.html">Price & packages</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="Location.html">Location</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="Contact.html">Contact</a>
+                                </li>
+                                <!-- Button trigger modal -->
+                                <button style="font-family: ar-font-bold;" type="button" class="btn btn-danger"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Book Now <i class="fa-brands fa-whatsapp mx-1"></i>
+                                </button>
+
+                              
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1"
+      aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Select Branch</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <h3 style="font-family: ar-font-bold;" class="text-center py-3">Booking
+                      Now</h3>
+                  <ul class="ul-booking">
+                      <li>
+                          <a class="btn btn-danger  px-3 py-2"
+                              style="text-decoration: none;" aria-current="page"
+                              href="https://api.whatsapp.com/send?phone=+966557452030&text=Hi, I want Booking">
+                              JEDDAH <i class="fa-brands fa-whatsapp mx-1"></i></a>
+                      </li>
+                      <li> <a class="btn btn-danger  px-3 py-2"
+                              style="text-decoration: none;" aria-current="page"
+                              href="https://api.whatsapp.com/send?phone=+971501285456&text=Hi, I want Booking">
+                              DUBAI <i class="fa-brands fa-whatsapp mx-1"></i></a></li>
+                      <li>
+                          <a class="btn btn-danger  px-3 py-2"
+                              style="text-decoration: none;" aria-current="page"
+                              href="https://api.whatsapp.com/send?phone=+971501285456&text=Hi, I want Booking">
+                              ABU DHABI <i class="fa-brands fa-whatsapp mx-1"></i></a>
+                      </li>
+                  </ul>
+
+
+              </div>
+
+          </div>
+      </div>
+  </div>
+    <div class="gallery">
+        <div class="row p-4 m-0">
+            <h1 style="font-family: ar-font-bold; color: #ec1d25;" class="p-md-4 p-2">Gallery / Images</h1>
+            <div class="row p-0 m-0 ">
+
+                <div class="col-md-3 col-sm-4 col-6 p-0 m-0 ">
+                    <div class="container">
+                        <a target="_blank" href="./image/DSC_3892.jpg">
+                            <img src="./image/DSC_3892.jpg">
+                            <div class="over-gallery">
+                                <div class="text">
+                                    <i class="fa-sharp fa-solid fa-image"></i>
+                                    <br>
+                                    Click to Large Photo
+                                </div>
+                            </div>
+                    </div>
+
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-6 p-0 m-0 ">
+                    <a target="_blank" href="./image/DSC_3880.jpg">
+                        <div class="container">
+                            <img src="./image/DSC_3880.jpg">
+                            <div class="over-gallery">
+                                <div class="text">
+                                    <i class="fa-sharp fa-solid fa-image"></i>
+                                    <br>
+                                    Click to Large Photo
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-6 p-0 m-0 ">
+                    <a target="_blank" href="./image/DSC_3901.jpg">
+                        <div class="container">
+                            <img src="./image/DSC_3901.jpg">
+                            <div class="over-gallery">
+                                <div class="text">
+                                    <i class="fa-sharp fa-solid fa-image"></i>
+                                    <br>
+                                    Click to Large Photo
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-6 p-0 m-0 ">
+                    <a target="_blank" href="./image/DSC_3918.jpg">
+                        <div class="container">
+                            <img src="./image/DSC_3918.jpg">
+                            <div class="over-gallery">
+                                <div class="text">
+                                    <i class="fa-sharp fa-solid fa-image"></i>
+                                    <br>
+                                    Click to Large Photo
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-6 p-0 m-0 ">
+                    <a target="_blank" href="./image/DSC_3900.jpg">
+                        <div class="container">
+                            <img src="./image/DSC_3900.jpg">
+                            <div class="over-gallery">
+                                <div class="text">
+                                    <i class="fa-sharp fa-solid fa-image"></i>
+                                    <br>
+                                    Click to Large Photo
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-6 p-0 m-0 ">
+                    <a target="_blank" href="./image/DSC_3895.jpg">
+                        <div class="container">
+                            <img src="./image/DSC_3895.jpg">
+                            <div class="over-gallery">
+                                <div class="text">
+                                    <i class="fa-sharp fa-solid fa-image"></i>
+                                    <br>
+                                    Click to Large Photo
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-6 p-0 m-0 ">
+                    <a target="_blank" href="./image/33.jpg">
+                        <div class="container">
+                            <img src="./image/33.jpg">
+                            <div class="over-gallery">
+                                <div class="text">
+                                    <i class="fa-sharp fa-solid fa-image"></i>
+                                    <br>
+                                    Click to Large Photo
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+
+
+
+
+
+
+                <div class="col-md-3 col-sm-4 col-6 p-0 m-0 ">
+                    <a target="_blank" href="./image/66.jpg">
+                        <div class="container">
+                            <img src="./image/66.jpg">
+                            <div class="over-gallery">
+                                <div class="text">
+                                    <i class="fa-sharp fa-solid fa-image"></i>
+                                    <br>
+                                    Click to Large Photo
+                                </div>
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-6 p-0 m-0 ">
+                    <a target="_blank" href="./image/DSC01670.JPG">
+                        <div class="container">
+                            <img src="./image/DSC01670.JPG">
+                            <div class="over-gallery">
+                                <div class="text">
+                                    <i class="fa-sharp fa-solid fa-image"></i>
+                                    <br>
+                                    Click to Large Photo
+                                </div>
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-6 p-0 m-0 ">
+                    <a target="_blank" href="./image/22.jpg">
+                        <div class="container">
+                            <img src="./image/22.jpg">
+                            <div class="over-gallery">
+                                <div class="text">
+                                    <i class="fa-sharp fa-solid fa-image"></i>
+                                    <br>
+                                    Click to Large Photo
+                                </div>
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-6 p-0 m-0 ">
+                    <a target="_blank" href="./image/٢٠٢٣٠٢١٢_١٠٣٣٥١.jpg">
+                        <div class="container">
+                            <img src="./image/٢٠٢٣٠٢١٢_١٠٣٣٥١.jpg">
+                            <div class="over-gallery">
+                                <div class="text">
+                                    <i class="fa-sharp fa-solid fa-image"></i>
+                                    <br>
+                                    Click to Large Photo
+                                </div>
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-6 p-0 m-0 ">
+                    <a target="_blank" href="./image/٢٠٢٢١١٢٠_١٥٣٥٥٧(0).jpg">
+                        <div class="container">
+                            <img src="./image/٢٠٢٢١١٢٠_١٥٣٥٥٧(0).jpg">
+                            <div class="over-gallery">
+                                <div class="text">
+                                    <i class="fa-sharp fa-solid fa-image"></i>
+                                    <br>
+                                    Click to Large Photo
+                                </div>
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-6 p-0 m-0 ">
+                    <a target="_blank"
+                        href="./image/d82e4de1-0407-4c56-90e2-458c15c71c05.jfif Image 2022-12-31 at 7.11.39 PM (1).jpeg">
+                        <div class="container">
+                            <img src="./image/d82e4de1-0407-4c56-90e2-458c15c71c05.jfif">
+                            <div class="over-gallery">
+                                <div class="text">
+                                    <i class="fa-sharp fa-solid fa-image"></i>
+                                    <br>
+                                    Click to Large Photo
+                                </div>
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-6 p-0 m-0 ">
+                    <a target="_blank" href="./image/fire.jpg">
+                        <div class="container">
+                            <img src="./image/fire.jpg">
+                            <div class="over-gallery">
+                                <div class="text">
+                                    <i class="fa-sharp fa-solid fa-image"></i>
+                                    <br>
+                                    Click to Large Photo
+                                </div>
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-6 p-0 m-0 ">
+                    <a target="_blank" href="./image/DSC_3902.jpg">
+                        <div class="container">
+                            <img src="./image/DSC_3902.jpg">
+                            <div class="over-gallery">
+                                <div class="text">
+                                    <i class="fa-sharp fa-solid fa-image"></i>
+                                    <br>
+                                    Click to Large Photo
+                                </div>
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-6 p-0 m-0 ">
+                    <a target="_blank" href="./image/DSC_3861.jpg">
+                        <div class="container">
+                            <img src="./image/DSC_3861.jpg">
+                            <div class="over-gallery">
+                                <div class="text">
+                                    <i class="fa-sharp fa-solid fa-image"></i>
+                                    <br>
+                                    Click to Large Photo
+                                </div>
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-6 p-0 m-0 ">
+                    <a target="_blank" href="./image/DSC_3903.jpg">
+                        <div class="container">
+                            <img src="./image/DSC_3903.jpg">
+                            <div class="over-gallery">
+                                <div class="text">
+                                    <i class="fa-sharp fa-solid fa-image"></i>
+                                    <br>
+                                    Click to Large Photo
+                                </div>
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-6 p-0 m-0 ">
+                    <a target="_blank" href="./image/DSC_3916----.jpg">
+                        <div class="container">
+                            <img src="./image/DSC_3916----.jpg">
+                            <div class="over-gallery">
+                                <div class="text">
+                                    <i class="fa-sharp fa-solid fa-image"></i>
+                                    <br>
+                                    Click to Large Photo
+                                </div>
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-4 col-6 p-0 m-0 ">
+                    <a target="_blank" href="./image/55.jpg">
+                        <div class="container">
+                            <img src="./image/55.jpg">
+                            <div class="over-gallery">
+                                <div class="text">
+                                    <i class="fa-sharp fa-solid fa-image"></i>
+                                    <br>
+                                    Click to Large Photo
+                                </div>
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+
+
+
+
+
+            </div>
+            <h1 style="font-family: ar-font-bold; color: #ec1d25;" class="p-md-4 p-2">Gallery / Videos</h1>
+
+            <div class="row p-0 m-0 ">
+
+                <div class="col-md-3 col-sm-4 col-6 p-0 m-0 ">
+                    <a target="_blank" href="./video/j-1.mov">
+
+                        <div class="container">
+                            <video class="w-100 m-0 p-0" muted>
+                                <source src="./video/j-1.mov" type="video/mp4">
+                            </video>
+                            <div class="over-gallery-video">
+                                <div class="text">
+                                    <i class="fa-sharp fa-solid fa-video"></i>
+                                    <br>
+                                    Click to Large video
+                                </div>
+                            </div>
+
+                        </div>
+                    </a>
+
+                </div>
+                <div class="col-md-3 col-sm-4 col-6 p-0 m-0 ">
+                    <a target="_blank" href="./video/4.m4v">
+                        <div class="container">
+
+                            <video class="w-100 m-0 p-0" muted>
+                                <source src="./video/4.m4v" type="video/mp4">
+                            </video>
+                            <div class="over-gallery-video">
+                                <div class="text">
+                                    <i class="fa-sharp fa-solid fa-video"></i>
+                                    <br>
+                                    Click to Large video
+                                </div>
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-4 col-6 p-0 m-0 ">
+                    <a target="_blank" href="./video/0215 2.mov">
+
+                        <div class="container">
+                            <video class="w-100 m-0 p-0" muted>
+                                <source src="./video/0215 2.mov" type="video/mp4">
+                            </video>
+                            <div class="over-gallery-video">
+                                <div class="text">
+                                    <i class="fa-sharp fa-solid fa-video"></i>
+                                    <br>
+                                    Click to Large video
+                                </div>
+                            </div>
+
+                        </div>
+                    </a>
+
+                </div>
+                <div class="col-md-3 col-sm-4 col-6 p-0 m-0 ">
+                    <a target="_blank" href="./video/j-1.mov">
+                        <div class="container">
+
+                            <video class="w-100 m-0 p-0" muted>
+                                <source src="./video/j-1.mov" type="video/mp4">
+                            </video>
+                            <div class="over-gallery-video">
+                                <div class="text">
+                                    <i class="fa-sharp fa-solid fa-video"></i>
+                                    <br>
+                                    Click to Large video
+                                </div>
+                            </div>
+                        </div>
+
+                    </a>
+
+
+                </div>
+                <div class="col-md-3 col-sm-4 col-6 p-0 m-0 ">
+                    <a target="_blank" href="./video/4.m4v">
+                        <div class="container">
+
+                            <video class="w-100 m-0 p-0" muted>
+                                <source src="./video/4.m4v" type="video/mp4">
+                            </video>
+                            <div class="over-gallery-video">
+                                <div class="text">
+                                    <i class="fa-sharp fa-solid fa-video"></i>
+                                    <br>
+                                    Click to Large video
+                                </div>
+                            </div>
+                        </div>
+
+                    </a>
+
+
+                </div>
+                <div class="col-md-3 col-sm-4 col-6 p-0 m-0 ">
+                    <a target="_blank" href="./video/0215 2.mov">
+                        <div class="container">
+
+                            <video class="w-100 m-0 p-0" muted>
+                                <source src="./video/0215 2.mov" type="video/mp4">
+                            </video>
+                            <div class="over-gallery-video">
+                                <div class="text">
+                                    <i class="fa-sharp fa-solid fa-video"></i>
+                                    <br>
+                                    Click to Large video
+                                </div>
+                            </div>
+                        </div>
+
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+    <div class="footer">
+        <div class="receive">
+            <form>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <h1>receive good things</h1>
+                    </div>
+                    <div class="col-lg-3">
+                        <input class="input-email" name="Name" placeholder="Enter your name" />
+                    </div>
+                    <div class="col-lg-3">
+                        <input class="input-email" name="Number" placeholder="Phone number" />
+
+                    </div>
+                    <div class="col-lg-3">
+                        <button type="button" onclick="sendEmail()">Subscribe</button>
+                    </div>
+                </div>
+
+            </form>
+            <img class="edge-top-receive" src="./image/edge_top_yl.png">
+        </div>
+        <div class="footer-bar">
+            <div class="row p-0 m-0">
+                <div class="col-md-4 text-center py-5 ">
+                    <img class="logo-footer" src="./image/logo (2).png">
+                </div>
+                <div class="col-sm-4">
+                    <h2>Navigate</h2>
+                    <ul class="ul-link">
+                        <li><a href="Crew.html">About us</a></li>
+                        <li><a href="#review">Testimonials</a></li>
+                        <li><a href="Faq.html">FAQs</a></li>
+                        <li><a href="Gallery.html">Media</a></li>
+                        <li><a href="Contact.html">Contact Us</a></li>
+                        <li><a href="Price.html">Price & packages</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <h2>Contact us</h2>
+                    <ul class="ul-link ul-contact">
+                        <li><i class="fa-sharp fa-solid fa-phone px-2"></i>+971 50 1285456</li>
+                        <li><i class="fa-solid fa-envelope px-2"></i>info@jetboat2030.com</li>
+                        <li><i class="fa-solid fa-location-dot px-2"></i>
+                            DUBAI : Fishing Harbor - Umm Suqeim 2 - Jumeirah St - Dubai
+
+                        </li>
+                        <li><i class="fa-solid fa-location-dot px-2"></i>
+                            JEDDAH : Al Kurnaysh Br Rd, Ash Shati, Jeddah 23613, Saudi Arabia
+
+                        </li>
+                        <li><i class="fa-solid fa-location-dot px-2"></i>
+                            ABU DHABI : next to Havana Cafe - Al Marina - Abu Dhabi - United Arab Emirates
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+            <img class="edge-top-footer" src="./image/edge_top_blk.png">
+        </div>
+        <div class="footer-media">
+            <h5>© 2023 Fireboat</h5>
+            <ul>
+                <li><a href="https://www.instagram.com/fireboat.2030"> <i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://vm.tiktok.com/ZS8MB1o38/"><i class="fa-brands fa-tiktok"></i></a></li>
+                <li><a href="https://www.snapchat.com/fireboat202030"><i class="fa-brands fa-snapchat"></i></a></li>
+
+            </ul>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

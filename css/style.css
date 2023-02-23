@@ -1,0 +1,1591 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: ar-font, sans-serif;
+}
+
+@font-face {
+    font-family: ar-font;
+    src: url(../assest/fontawesome/webfonts/SairaSemiCondensed-Regular.ttf)
+}
+
+@font-face {
+    font-family: ar-font-bold;
+    src: url(../assest/fontawesome/webfonts/SairaSemiCondensed-ExtraBold.ttf)
+}
+
+
+.test {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 35%;
+    transform: translate(-50%, -55%);
+}
+
+/* .test-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -28%);
+    width: 18% !important;
+    height: 44% !important;
+} */
+
+#myVideo {
+    right: 0;
+    top: 0;
+    min-width: 100%;
+    position: fixed;
+    margin-bottom: -10px !important;
+    z-index: -1;
+}
+
+#myVideoTwo {
+    display: none !important;
+}
+
+.Header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    text-align: center !important;
+}
+
+.Header nav.bg-light {
+    background-color: transparent !important;
+    /* float: right; */
+}
+
+.booking {
+    background-color: #ec1d24bb;
+    /* border-radius: 5px; */
+
+}
+
+.booking:hover {
+    background-color: #ec1d24;
+}
+
+.booking a.nav-link:hover {
+    color: white !important;
+    border: none;
+}
+
+a.active {
+    color: #ffd800 !important;
+    border-bottom: 4px solid #ffd800;
+
+}
+
+a {
+    color: white !important;
+    font-family: ar-font-bold !important;
+    font-size: 17px !important;
+}
+
+a.nav-link:hover,
+a.nav-link.dropdown-toggle:hover {
+    color: #ffd800 !important;
+    border-bottom: 4px solid #ffd800;
+    transition: 0.1s ease-in-out;
+}
+
+ul.navbar-nav li {
+    padding: 0 10px;
+}
+
+ul.dropdown-menu {
+    background-color: #ec1d25;
+    padding: 0;
+    border-radius: 0;
+    margin: 0;
+}
+
+ul.dropdown-menu li {
+    padding: 0;
+}
+
+ul.dropdown-menu li a.dropdown-item {
+    padding: 0.7rem 25px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+
+}
+
+ul.dropdown-menu li a.dropdown-item:hover {
+    color: black !important;
+    transition: 0.3s ease-in-out;
+}
+
+
+
+.group-boat .col-md-3,
+.group-boat .col-md-4 {
+    text-align: center;
+    padding: 47px 14px 30px 14px
+}
+
+.group-boat .col-md-3 h3,
+.group-boat .col-md-4 h3 {
+    font-family: ar-font-bold;
+    color: white;
+    padding: 10px;
+    width: 100%;
+}
+
+.group-boat .img-groupe {
+    width: 182px;
+    height: 44px;
+}
+
+.group-boat .boat-one,
+.group-boat .boat-two,
+.group-boat .boat-tree,
+.group-boat .boat-four {
+    position: relative;
+}
+
+.group-boat a {
+    text-decoration: none;
+}
+
+.group-boat .boat-one-absolute {
+    position: absolute;
+    top: 0;
+    right: -15px;
+    width: 5%;
+    height: 100%;
+    z-index: 1;
+}
+
+.group-boat .boat-one-absolute-two {
+    position: absolute;
+    top: -12px;
+    width: 100%;
+    left: 0;
+    height: 7%;
+}
+
+.content h1 {
+    text-align: center;
+    padding: 23px 0;
+    font-family: ar-font-bold;
+    font-size: 45px;
+    margin: 0;
+    padding-top: 40px;
+}
+
+.content p {
+    line-height: 42px;
+    font-size: 23px;
+    font-weight: 500;
+    padding: 13px 20px;
+}
+
+.content button {
+    margin: 12px;
+}
+
+.content img {
+    height: 545px;
+    position: relative;
+}
+
+.content .img-relative-one,
+.content .img-relative-two {
+    position: relative;
+}
+
+.content .img-absolute-one {
+    position: absolute;
+    top: 0;
+    right: -4%;
+    width: 4%;
+    z-index: 1;
+}
+
+.content .img-absolute-one-responsive,
+.content .img-absolute-two-responsive {
+    display: none !important;
+}
+
+.content .img-absolute-two {
+    position: absolute;
+    top: 0%;
+    left: -3.5%;
+    width: 4%;
+
+}
+
+.btn-content {
+    font-family: ar-font-bold;
+    padding: 15px 20px;
+    border-radius: 0;
+}
+
+.content span {
+    color: white;
+    line-height: 30px;
+    display: block;
+    padding: 5px 20px !important;
+}
+
+.image {
+    width: 100%;
+}
+
+.reviews {
+    background-image: url('../image/WhatsApp\ Image\ 2022-12-31\ at\ 7.11.39\ PM\ \(1\).jpeg');
+    background-size: cover;
+    height: 100%;
+    padding: 80px;
+}
+
+
+.info-review {
+    padding: 100px 50px;
+    background: #0b0101b0;
+    color: #f1f1f1;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    height: auto;
+    position: relative;
+
+}
+
+.info-review img.righ-edge {
+    position: absolute;
+    right: -1%;
+    top: 0;
+    height: 100%;
+    width: 1%;
+}
+
+.info-review img.left-edge {
+    position: absolute;
+    left: -1%;
+    top: 0;
+    height: 100%;
+    width: 1%;
+}
+
+
+.info-review img.top-edge {
+    position: absolute;
+    right: 0;
+    top: -3%;
+    height: 3%;
+    width: 100%;
+
+}
+
+.info-review img.bottom-edge {
+    position: absolute;
+    right: 0;
+    bottom: -3%;
+    height: 3%;
+    width: 100%;
+}
+
+
+.info-review i {
+    color: #ec1d24;
+    font-size: 70px;
+}
+
+.info-review p {
+    line-height: 35px;
+    font-size: 23px;
+}
+
+.info-review h1 {
+    font-family: ar-font-bold;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    border: none !important;
+
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    display: none;
+}
+
+.checked {
+    color: #ffd800;
+}
+
+.receive {
+    background-color: #ffd800;
+    padding: 50px;
+    position: relative;
+}
+
+.edge-top-receive {
+    position: absolute;
+    top: -8%;
+    right: 0;
+    width: 100%;
+    height: 8%;
+
+}
+
+.receive h1 {
+    font-family: ar-font-bold;
+    color: black;
+}
+
+.receive input {
+    border: none;
+    border-bottom: 4px solid black;
+    background-color: transparent;
+    font-size: 20px;
+    padding: 10px 27px;
+    font-family: ar-font-bold;
+    width: 200px;
+}
+
+.receive input:focus {
+    border: none !important;
+}
+
+.receive button {
+    background-color: black;
+    border: none;
+    color: #ffd800;
+    padding: 10px 50px;
+    font-family: ar-font-bold;
+    font-size: 25px;
+}
+
+.map {
+    margin-bottom: -7px;
+}
+
+.footer-bar {
+    background-color: black;
+    padding: 40px;
+    position: relative;
+}
+
+.edge-top-footer {
+    position: absolute;
+    top: -4%;
+    right: 0;
+    width: 100%;
+    height: 4%;
+}
+
+.footer-bar img.logo-footer {
+    width: 64%;
+}
+
+/* .fa-clock-four:before, .fa-clock:before {
+    content: "\f017";
+    font-size: 50px;
+} */
+.footer-bar p {
+    color: white;
+}
+
+.footer-bar h2 {
+    color: white;
+    font-family: ar-font-bold;
+    padding: 18px 0px
+}
+
+.footer-bar ul.ul-link li {
+    list-style-type: disc;
+
+}
+
+.footer-bar ul li {
+    list-style: none;
+    padding: 14px 0;
+    color: white;
+    font-size: 20px;
+
+}
+
+.footer-bar ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: ar-font-bold;
+}
+
+.footer-bar ul.ul-link li a:hover {
+    color: #ec1d25 !important;
+    transition: 0.2s ease-in-out;
+}
+
+.footer-media {
+    background-color: #1c1c1c;
+    padding: 20px;
+    position: relative;
+}
+
+.footer-media ul {
+    display: inline;
+    float: right;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.footer-media ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.footer-media ul a {
+    color: white;
+}
+
+.footer-media ul a:hover {
+    color: #6d6c6c;
+}
+
+.height-experience {
+    padding: 30px;
+    position: relative;
+
+}
+
+.height-experience .img-absolute-ride,
+.faqs .img-absolute-ride {
+    position: absolute;
+    top: 0%;
+    right: 31.5%;
+    width: 2%;
+    height: 100%;
+
+}
+
+.height-experience h1,
+.height-experience h2,
+.height-experience h3 {
+    font-family: ar-font-bold;
+    color: black
+}
+
+.height-experience p {
+    line-height: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.height-experience ul li {
+    list-style: disc;
+    padding: 10px 0;
+    color: black;
+}
+
+
+.faqs {
+    background-color: white;
+    position: relative;
+
+}
+
+.faqs h2 {
+    font-family: ar-font-bold;
+}
+
+.faqs h1 {
+    font-family: ar-font-bold;
+    color: black;
+    padding: 15px 0;
+    font-size: 45px;
+}
+
+.accordion-body {
+    background-color: #e8e6e656;
+}
+
+.accordion-button {
+    height: 65px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.637);
+    background-color: #ec1d25;
+    color: white;
+    font-size: 20px;
+}
+
+.accordion-button:hover {
+    background-color: #ffd800;
+}
+
+.crew {
+    padding: 20px;
+}
+
+.crew img {
+    width: 100%;
+    height: 270px;
+}
+
+.crew h1 {
+    font-family: ar-font-bold;
+    padding: 10px;
+    color: #ec1d25;
+}
+
+.crew p {
+    padding-top: 20px;
+    line-height: 45px;
+    font-size: 25px;
+}
+
+.crew ul {
+    padding: 10px 30px;
+}
+
+.crew ul li {
+    list-style: disc;
+    padding: 10px 0;
+    font-size: 20px;
+    font-family: ar-font-bold;
+}
+
+.contact {
+    padding: 40px;
+}
+
+.contact label {
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact input {
+    height: 50px;
+    border-radius: 0;
+}
+
+.contact textarea {
+    height: 120px;
+    border-radius: 0;
+    margin-bottom: 15px;
+}
+
+.container {
+    position: relative;
+    padding: 0;
+}
+
+.gallery img {
+    border-radius: 0px;
+    width: 100%;
+    height: 160px;
+}
+
+.over-gallery {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    /* Black see-through */
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.container:hover .over-gallery {
+    height: 100%;
+}
+
+.over-gallery-video {
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    right: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    width: 100%;
+    height: 95%;
+    transition: .5s ease;
+}
+
+.text {
+    color: white;
+    font-size: 17px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.price,
+.faqs {
+    position: relative;
+}
+
+.price img.design,
+.faqs img.design {
+    position: absolute;
+    top: -24px;
+}
+
+.price .img-price {
+    position: relative;
+    width: 100%;
+}
+
+.price a {
+    color: black !important;
+}
+
+.price .img-price h2 {
+    font-family: ar-font-bold;
+    top: 0;
+    position: absolute;
+    background-color: #ffd800;
+    color: black;
+    width: 100%;
+    padding: 20px 50px;
+    font-size: 45px;
+}
+
+.price .img-price ul {
+    bottom: 0;
+    position: absolute;
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 35px;
+    margin: 0;
+}
+
+.price .img-price ul li {
+    list-style: none;
+    display: inline-block;
+    font-family: ar-font-bold;
+    font-size: 27px;
+}
+
+.Header-Two nav.bg-light {
+    background-color: transparent !important;
+    /* background-color: #ec1d24 !important;
+    height: 100px; */
+}
+
+.Header-Two img {
+    width: 100%;
+}
+
+/* .Header-Two img.logo-navbar {
+    width: 100px !important;
+    height: 70px;
+} */
+
+.container-cover {
+    position: relative;
+}
+
+.container-cover img {
+    width: 100%;
+    height: 650px;
+}
+
+.container-cover .overlay-cover {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.078);
+    top: 0;
+    width: 100%;
+    opacity: 1;
+    padding: 20px;
+    height: 100%;
+}
+
+.card {
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    border: none;
+}
+
+.card h4,
+.card h5 {
+    font-family: ar-font-bold;
+    padding: 20px 0;
+    font-size: 25px;
+    color: white;
+
+}
+
+.card p {
+    font-size: 22px;
+}
+
+.card a {
+    background-color: #ffd800;
+    color: black !important;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+.group-boat.group-comfort .col-md-4 {
+    padding: 18px 21px !important;
+
+}
+
+.group-boat.group-comfort .boat-one-absolute {
+    position: absolute;
+    z-index: 10;
+    height: 100%;
+    top: 0;
+    right: -14px !important;
+    width: 4% !important;
+}
+
+.group-boat.group-comfort .boat-one-absolute-two {
+    position: absolute;
+    top: -17px;
+    width: 100%;
+    left: 0;
+    height: 6%;
+}
+
+.comfort {
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.comfort h1,
+.comfort h2 {
+    color: black !important;
+    font-family: ar-font-bold;
+}
+
+.comfort ul li {
+    list-style: disc;
+    padding: 10px 0;
+    color: black;
+    font-size: 20px;
+    font-family: ar-font-bold;
+}
+
+.footer-bar ul.ul-link.ul-contact li {
+    list-style: none;
+    font-size: 18px;
+}
+
+.footer-media h5 {
+    color: white;
+    display: inline-block;
+    padding-left: 40px;
+}
+
+.img-tree {
+    display: none !important;
+}
+
+.book-btn {
+    background-color: #ffd800;
+    float: right;
+    color: black;
+}
+
+.book-btn:hover {
+    background-color: #c9ab00;
+    color: black;
+
+}
+
+.bck {
+    background-color: black;
+}
+
+.ul-branch {
+    padding-top: 40px;
+    padding: 0;
+    padding-left: 30px;
+    border-right: 4px solid brown;
+}
+
+.ul-branch li {
+    padding: 20px 0;
+    list-style: none;
+    font-size: 23px;
+    color: white;
+    font-family: ar-font;
+}
+
+.dubai-back {
+    background-image: url(../image/1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 100px;
+
+}
+
+.jeddah-back {
+    background-image: url(../image/Asset\ 2-100.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 100px;
+}
+
+.abudhabi-back {
+    background-image: url(../image/Asset\ 4-100.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 100px;
+
+}
+
+.modal-body .ul-booking {
+    padding: 0;
+    text-align: center;
+}
+
+.modal-body .ul-booking li {
+    display: inline;
+    list-style: none;
+}
+
+.map {
+    position: relative;
+}
+
+.map ul {
+    position: absolute;
+    right: 25px;
+    top: 20px;
+}
+
+.map ul li {
+    display: inline;
+    list-style: none;
+    margin: 0;
+}
+
+.jeddah-back iframe,
+.dubai-back iframe,
+.abudhabi-back iframe {
+    text-align: center;
+    border: 0;
+    height: 400px;
+    width: 400px;
+    margin-top: 50px;
+    margin-left: 90px;
+}
+
+.img-fourth {
+    display: none !important;
+}
+
+@media (max-width:1190px) {
+    .img-comfort {
+        display: none;
+    }
+
+    .price .img-price ul {
+
+        padding: 20px !important;
+    }
+
+    .book-btn {
+
+        margin-right: 3px !important;
+        margin-left: 3px !important;
+    }
+
+    .group-boat .boat-one-absolute {
+        position: absolute;
+        z-index: 10;
+        height: 100%;
+        top: 0;
+        right: -17px !important;
+        width: 7% !important;
+    }
+
+    .test {
+        height: 26% !important;
+
+    }
+
+    .content .img-absolute-one {
+        right: -3.5% !important;
+        width: 4% !important;
+    }
+
+    .edge-top-receive {
+        top: -6% !important;
+
+        height: 6% !important;
+    }
+}
+
+
+@media (max-width:1060px) {
+    .group-boat.group-comfort .boat-one-absolute {
+
+        right: -14px !important;
+        width: 4% !important;
+    }
+}
+
+
+@media (max-width:1048px) {
+
+    .jeddah-back iframe,
+    .dubai-bakc iframe,
+    .abudhabi-back iframe {
+        height: 350px !important;
+        width: 350px !important;
+    }
+
+    .book-btn {
+        width: 100% !important;
+        margin-top: 10px !important;
+    }
+
+    .content img {
+        height: 839px !important;
+    }
+
+    .group-boat .boat-one-absolute {
+
+        right: -16px !important;
+    }
+
+    .content img {
+        height: 615px !important;
+    }
+
+    .group-boat.group-comfort .boat-one-absolute {
+
+        right: -11px !important;
+        width: 4% !important;
+    }
+}
+
+@media (max-width:1035px) {
+
+
+    .design {
+        display: none !important;
+    }
+
+    .test {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 35%;
+        transform: translate(-50%, -129%);
+    }
+
+}
+
+@media (max-width:991px) {
+    .ul-branch {
+
+        border-right: none;
+    }
+
+    .jeddah-back iframe,
+    .dubai-back iframe,
+    .abudhabi-back iframe {
+        text-align: center;
+        border: 0;
+        height: 100%;
+        width: 100%;
+        margin-top: 50px;
+        margin-left: 0;
+        margin-bottom: 50px;
+    }
+
+    .crew img {
+        width: 100%;
+        height: 220px;
+    }
+
+
+    .height-experience .img-absolute-ride,
+    .faqs .img-absolute-ride {
+        display: none;
+    }
+
+    .faqs .pr {
+        display: none;
+    }
+
+    .Header button.btn-danger,
+    .Header-Two button.btn-danger {
+        background-color: #ec1d24 !important;
+        border-radius: 0;
+        padding: 10px;
+        color: #ffd800;
+    }
+
+    .navbar {
+        z-index: 1 !important;
+    }
+
+    ul.navbar-nav {
+        text-align: center !important;
+        margin-top: 5px !important;
+        z-index: 2 !important;
+    }
+
+    ul.navbar-nav li {
+        background-color: #ec1d24 !important;
+        padding: 5px 0 !important;
+
+    }
+
+    a.active {
+        border-bottom: none !important;
+    }
+
+    a.nav-link:hover,
+    a.nav-link.dropdown-toggle:hover {
+        border-bottom: none !important;
+    }
+
+    .receive {
+        padding: 37px 144px !important;
+    }
+
+    .receive input {
+        width: 100% !important;
+        margin: 15px 0px !important;
+    }
+
+    .footer-bar ul.ul-link.ul-contact li {
+        font-size: 17px !important;
+    }
+
+    .content h1 {
+
+        font-size: 40px !important;
+
+    }
+
+    .content img {
+        height: 575px !important;
+    }
+
+    .content p {
+        font-size: 20px !important;
+
+    }
+
+    /* .test-img {
+        transform: translate(-60%, -28%);
+        width: 25% !important;
+        height: 38% !important;
+    } */
+
+}
+
+@media (max-width:900px) {
+
+    .group-boat .boat-one-absolute {
+        right: -14px !important;
+    }
+
+    .content img {
+        height: 534px !important;
+    }
+}
+
+@media (max-width:880px) {
+    .price .img-price ul li {
+
+        font-size: 25px !important;
+    }
+
+    .gallery img {
+
+        height: 120px !important;
+    }
+
+}
+
+@media (max-width:865px) {
+
+    .container-cover img {
+        height: 500px;
+    }
+
+    .footer-bar ul.ul-link.ul-contact li {
+        font-size: 17px !important;
+    }
+
+    .group-boat .boat-one-absolute {
+        right: -12px !important;
+    }
+
+    .content h1 {
+        font-size: 39px !important;
+    }
+
+    .content p {
+        font-size: 19px !important;
+    }
+
+    .crew img {
+        height: 154px !important;
+    }
+}
+
+
+@media (max-width:768px) {
+    .img-fourth {
+        display: inline !important;
+    }
+
+    .img-fouthr2 {
+        display: none !important;
+    }
+
+    .crew img {
+        height: 100% !important;
+    }
+
+    .faqs h1 {
+
+        font-size: 33px !important;
+    }
+
+    .group-boat.group-comfort .boat-one-absolute-two {
+        top: -19px !important;
+        height: 7% !important;
+    }
+
+    .test {
+        height: 22% !important;
+        transform: translate(-50%, -169%) !important;
+    }
+
+    .group-boat .boat-one-absolute {
+        display: none !important;
+    }
+
+    .reviews {
+        padding: 40px !important;
+
+    }
+
+    .info-review p {
+        font-size: 20px !important;
+    }
+
+    .content .img-absolute-one,
+    .content .img-absolute-two {
+        display: none !important;
+
+    }
+
+    .gallery img {
+        border: none !important;
+        border-radius: 0px !important;
+    }
+
+    .img-tree {
+        display: inline !important;
+    }
+
+    .img-two {
+        display: none !important;
+    }
+
+    .receive {
+        padding: 37px 100px !important;
+    }
+
+    .receive input {
+        width: 100% !important;
+        margin: 15px 0px !important;
+    }
+
+    .receive button {
+        font-size: 20px !important;
+
+    }
+
+    .height-experience .img-absolute-ride {
+        display: none !important;
+    }
+
+    .group-boat .boat-one-absolute-two {
+        top: -12px !important;
+        height: 8% !important;
+
+    }
+
+
+
+    .footer-bar img.logo-footer {
+        width: 50% !important;
+    }
+
+    .edge-top-footer {
+        top: -2% !important;
+        height: 2% !important;
+    }
+
+    .edge-top-receive {
+        top: -6% !important;
+        height: 6% !important;
+    }
+
+    /* .test-img {
+        transform: translate(-50%, -42%);
+        width: 31% !important;
+        height: 39% !important;
+    } */
+}
+
+@media (max-width:841px) {
+    .price .img-price ul {
+        text-align: center !important;
+    }
+
+    .price .img-price ul li {
+        display: block !important;
+    }
+
+    .img-price img {
+        height: 798px !important;
+    }
+
+    .price .img-price h2 {
+
+        font-size: 35px !important;
+    }
+
+}
+
+@media (max-width:670px) {
+    .gallery img {
+        height: 108px !important;
+    }
+}
+
+@media (max-width:578px) {
+    .modal-body .ul-booking li {
+        display: block;
+    }
+
+    .modal-body .ul-booking li a {
+        width: 100%;
+        border-radius: 0 !important;
+
+    }
+
+    .card h5 {
+
+        font-size: 21px !important;
+    }
+
+    .card h4,
+    .card h5 {
+
+        font-size: 21px !important;
+    }
+
+    .comfort ul li {
+
+        font-size: 17px;
+    }
+
+    .info-review {
+        padding: 50px 20px !important;
+
+    }
+
+    .test {
+        height: 24% !important;
+        transform: translate(-50%, -50%) !important;
+    }
+
+    .modal-body .ul-booking li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #myVideoTwo {
+        display: inline !important;
+        margin-bottom: -298px !important;
+
+    }
+
+    #myVideo {
+        display: none !important;
+    }
+
+    .reviews {
+        padding: 20px !important;
+    }
+
+    .info-review p {
+        font-size: 18px !important;
+    }
+
+    .receive {
+        padding: 31px 30px !important
+    }
+
+    .info-review p {
+        line-height: 30px !important;
+    }
+
+    .footer-bar {
+        padding: 15px !important;
+    }
+
+    .footer-bar ul.ul-link li {
+        list-style: none !important;
+    }
+
+    .footer-bar ul.ul-link {
+        padding-left: 1rem;
+    }
+
+    .footer-bar ul.ul-link.ul-contact {
+        padding: 0 !important;
+    }
+
+    .price .img-price ul li {
+        font-size: 20px !important;
+    }
+
+    .content img {
+        height: 500px !important;
+    }
+
+    .content p {
+        font-size: 18px !important;
+    }
+
+    .content h1 {
+        padding: 10px 0 1px 0 !important;
+    }
+
+    .btn-content {
+        font-size: 13px !important;
+        padding: 11px 22px !important;
+
+    }
+
+    /* .container-cover img {
+        width: 100%;
+        height: 390px;
+    } */
+
+    .content .img-absolute-one-responsive {
+        position: absolute;
+        top: -4% !important;
+        width: 100% !important;
+        z-index: 1 !important;
+        right: 0px !important;
+        display: inline !important;
+        height: 4% !important;
+    }
+
+    .content .img-absolute-two-responsive {
+        position: absolute;
+        top: -3% !important;
+        width: 100% !important;
+        z-index: 1 !important;
+        right: 0px !important;
+        display: inline !important;
+        height: 3% !important;
+    }
+
+    .content h1 {
+        padding: 25px 0 1px 0 !important;
+    }
+
+
+    .edge-top-receive {
+        top: -4% !important;
+        right: 0 !important;
+        width: 100% !important;
+        height: 4% !important;
+    }
+
+    .edge-top-footer {
+        top: -1.5% !important;
+        height: 1.5% !important;
+    }
+
+    /* .test-img {
+        transform: translate(-50%, -42%);
+        width: 42% !important;
+        height: 36% !important;
+    } */
+    img.logo-footer {
+        width: 50% !important;
+    }
+
+    .container-cover img {
+        height: 400px !important;
+    }
+
+    .ul-branch {
+
+        padding-left: 10px !important;
+    }
+
+    .ul-branch li {
+
+
+        font-size: 20px !important;
+
+    }
+
+    .ul-branch li .btn-danger.w-50 {
+        width: 100% !important;
+    }
+
+}
+
+@media (max-width:497px) {
+    .group-boat .boat-one-absolute-two {
+        top: -19px !important;
+        height: 9% !important;
+    }
+
+    .group-boat .col-md-3,
+    .group-boat .col-md-4 {
+        padding: 70px 14px 51px 14px !important;
+    }
+
+    .over-gallery-video {
+
+        height: 92% !important;
+    }
+
+    .crew p {
+        padding: 0 !important;
+        font-size: 17px !important;
+        margin: 0 !important;
+    }
+
+    .crew ul li {
+
+        font-size: 16px !important;
+    }
+
+    .faqs button {
+        font-size: 18px;
+    }
+
+    .content .img-absolute-one-responsive {
+        top: -3% !important;
+        height: 3% !important;
+    }
+
+    .footer-media {
+        padding: 34px 0px !important;
+    }
+
+    .img-price img {
+        height: 660px !important;
+    }
+
+    .content img {
+        height: 367px !important;
+    }
+
+    .content h1 {
+        font-size: 32px !important;
+    }
+
+    .content img {
+        height: 306px !important;
+    }
+
+    .map ul li {
+
+        font-size: 13px;
+    }
+
+    .price .img-price h2 {
+        font-size: 26px !important;
+        padding: 16px 23px !important;
+
+    }
+}
+
+@media (max-width:395px) {
+    .info-review img.righ-edge {
+        position: absolute;
+        right: -2%;
+        top: 0;
+        height: 100%;
+        width: 2%;
+    }
+
+    .info-review img.left-edge {
+        position: absolute;
+        left: -2%;
+        top: 0;
+        height: 100%;
+        width: 2%;
+    }
+
+    .container-cover img {
+        height: 320px !important;
+    }
+
+    .gallery img {
+        height: 93px !important;
+    }
+
+    .test {
+        height: 16% !important;
+        transform: translate(-50%, -126%) !important;
+    }
+}
+
+@media (max-width:370px) {
+
+    /* .test-img {
+        transform: translate(-50%, -42%);
+        width: 45% !important;
+        height: 34% !important;
+    } */
+
+
+    .content .img-absolute-one-responsive {
+        top: -3% !important;
+        height: 3% !important;
+    }
+
+    .content .img-absolute-two-responsive {
+        top: -2% !important;
+        height: 2% !important;
+    }
+
+    .content h1 {
+        font-size: 27px !important;
+    }
+}
+
+@media (max-width:300px) {
+
+    .container-cover img {
+        height: 260px !important;
+    }
+}

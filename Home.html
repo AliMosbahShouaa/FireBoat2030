@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Fireboat</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" /> -->
+    <link rel="stylesheet" href="./assest/bootstrap/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/all.min.css"
+        integrity="sha512-ioRJH7yXnyX+7fXTQEKPULWkMn3CqMcapK0NNtCN8q//sW7ZeVFcbMJ9RvX99TwDg6P8rAH2IqUSt2TLab4Xmw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="">
+
+    <script src="js/index.js"></script>
+    <script type="text/javascript" src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js    "></script> -->
+    <script src="./assest/bootstrap/js/bootstrap.min.js "></script>
+
+</head>
+
+<body>
+    <video class="w-100 m-0 p-0" autoplay muted loop id="myVideo">
+        <source src="./video/4.m4v" type="video/mp4">
+
+    </video>
+    <video class="w-100 m-0 p-0" autoplay muted loop id="myVideoTwo">
+        <source src="./video/J-33.m4v" type="video/mp4">
+    </video>
+    <img class="test" src="./image/logo (2).png">
+
+    <header class="Header">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid ">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Experience
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="Ride.html">The Ride</a></li>
+                                <li><a class="dropdown-item" href="Comfort.html">Comfortably safe</a></li>
+                                <li><a class="dropdown-item" href="Faq.html">FAQs</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                About
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="Crew.html">Crew</a></li>
+                                <!-- <li><a class="dropdown-item" href="Boat.html">Boat</a></li> -->
+
+                                <li><a class="dropdown-item" href="Gallery.html">Gallery</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Branch
+                            </a>
+                            <ul class="dropdown-menu">
+
+                                <li><a class="dropdown-item" href="Jeddah.html">Jeddah</a></li>
+                                <li><a class="dropdown-item" href="Dubai.html">Dubai</a></li>
+
+                                <li><a class="dropdown-item" href="AbuDhabi.html">Abou Dhabi</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="Price.html">Price & packages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="Location.html">Location</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="Contact.html">Contact</a>
+                        </li>
+
+                        <!-- <li class="nav-item booking">
+                            <a class="nav-link" aria-current="page"
+                                href="https://api.whatsapp.com/send?phone=+971501285456&text=Hi, I want Booking">
+                                Book Now</a>
+                        </li> -->
+
+                        <!-- Button trigger modal -->
+                        <button style="font-family: ar-font-bold;" type="button" class="btn btn-danger"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Book Now <i class="fa-brands fa-whatsapp mx-1"></i>
+                        </button>
+
+
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Select Branch</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h3 style="font-family: ar-font-bold;" class="text-center py-3">Booking Now</h3>
+                    <ul class="ul-booking">
+                        <li>
+                            <a class="btn btn-danger  px-3 py-2" style="text-decoration: none;" aria-current="page"
+                                href="https://api.whatsapp.com/send?phone=+966557452030&text=Hi, I want Booking">
+                                JEDDAH <i class="fa-brands fa-whatsapp mx-1"></i></a>
+                        </li>
+                        <li> <a class="btn btn-danger  px-3 py-2" style="text-decoration: none;" aria-current="page"
+                                href="https://api.whatsapp.com/send?phone=+971501285456&text=Hi, I want Booking">
+                                DUBAI <i class="fa-brands fa-whatsapp mx-1"></i></a></li>
+                        <li>
+                            <a class="btn btn-danger  px-3 py-2" style="text-decoration: none;" aria-current="page"
+                                href="https://api.whatsapp.com/send?phone=+971501285456&text=Hi, I want Booking">
+                                ABU DHABI <i class="fa-brands fa-whatsapp mx-1"></i></a>
+                        </li>
+                    </ul>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="group-boat" style="margin-top: 50%;">
+        <div class="row p-0 m-0 ">
+            <a href="Jeddah.html" class="col-md-3 boat-one" style="background-color: black">
+                <div>
+                    <div>
+                        <img class="img-groupe" src="./image/Asset 1.png">
+                    </div>
+                    <div>
+                        <h3> JEDDAH</h3>
+                    </div>
+                </div>
+                <img class="boat-one-absolute" src="./image/edge_right_blk small.png">
+                <img class="boat-one-absolute-two" src="./image/edge_top_blk small.png">
+
+            </a>
+
+            <a href="Dubai.html" class="col-md-3 boat-two" style="background-color: #ec1d25;">
+                <div>
+                    <div>
+                        <img class="img-groupe" src="./image/Asset 2.png">
+
+                    </div>
+                    <div>
+                        <h3>DUBAI</h3>
+                    </div>
+
+                </div>
+                <img class="boat-one-absolute" src="./image/edge_right_rd - small.png">
+                <img class="boat-one-absolute-two" src="./image/edge_top_rd - small.png">
+            </a>
+            <a href="AbuDhabi.html" class="col-md-3 boat-tree" style="background-color: #ffd800;">
+                <div>
+                    <div>
+                        <img class="img-groupe" src="./image/Asset 1.png">
+
+                    </div>
+                    <div>
+                        <h3>ABOU DHABI</h3>
+                    </div>
+
+                </div>
+                <img class="boat-one-absolute" src="./image/edge_right_yl - small.png">
+                <img class="boat-one-absolute-two" src="./image/edge_top_yl - small.png">
+
+            </a>
+            <a href="#" class="col-md-3 boat-four" style="background-color: #007bff;">
+                <div>
+                    <div>
+                        <img class="img-groupe" src="./image/Asset 2.png">
+
+                    </div>
+                    <div>
+                        <h3>COMING SOON..</h3>
+                    </div>
+
+                </div>
+                <img class="boat-one-absolute-two" src="./image/edge_top_bl.png">
+            </a>
+
+        </div>
+    </div>
+    <div class="content">
+        <div class="container-fluid p-0 m-0">
+            <div class="row m-0 p-0">
+                <div class="col-md-6 p-0 img-fourth ">
+                    <img class="w-100" src="image/DSC_3902.jpg" />
+
+                </div>
+                <div class="col-md-6 p-0 " style="background-color: white;">
+                    <div class="img-relative-one">
+                        <h1>Fireboat for the rush</h1>
+                        <p>
+                            It is a tour on our FireBoat , during which passengers enjoy the waves of the sea, drifting
+                            of 360-degree and a water descent.
+                            come and join us to spend such wonderful time we guaranted to have an unforgettable
+                            experience with raising your adrenaline level to the top you will laugh.. you will scream ..
+                            you will enjoy
+                        </p>
+
+                        <a href="Ride.html">
+                            <button style="background-color:  #ec1d25; color: white; " class="btn btn-content">DISCOVER
+                                MORE
+                            </button>
+                        </a>
+                        <a href="Price.html">
+                            <button style="border: 1px solid #ec1d25;  color: #ec1d25; " class="btn btn-content">SPECIAL
+                                DEALS</button>
+                        </a>
+                        <img class="img-absolute-one" src="./image/edge_right_wh.png">
+                        <img class="img-absolute-one-responsive" src="./image/edge_bottom_wh.png">
+
+
+                    </div>
+
+                </div>
+                <div class="col-md-6 p-0 img-one ">
+                    <img class="w-100" src="image/DSC_3895---.jpg" />
+
+                </div>
+                <div class="col-md-6 p-0 img-two ">
+                    <img class="w-100 " src="image/DSC_3916----.jpg" />
+                </div>
+                <div class="col-md-6 p-0" style="background-color: black;">
+                    <div class="img-relative-two">
+                        <h1 style="color: white;">the ultimate performance</h1>
+                        <p style="color: white;">
+                            This means you get the ultimate performance when it comes to jetboats drivers. safety
+                            delivered by our crew who love doing it all for you.
+
+                            this Fireboat ride trip at 30 minutes. We are dedicated to provide amazing holiday
+                            value whether you’re a couple, family or group looking for full-on fun in sea. we also offre
+                            a free videos oblivion to share on social – just check with the crew when you dock back at
+                            HQ. </p>
+
+                        <a href="Gallery.html">
+                            <button style="background-color: white;  color: #ec1d25; " class="btn btn-content">MEDIA
+                                GALLERY
+                            </button>
+                        </a>
+                        <img class="img-absolute-two" src="./image/edge_left_blk.png">
+                        <img class="img-absolute-two-responsive" src="./image/edge_top_blk.png">
+
+                    </div>
+
+                </div>
+                <div class="col-md-6 p-0 img-tree ">
+                    <img class="w-100 " src="image/DSC_3916----.jpg" />
+                </div>
+                <div class="col-md-6 p-0 " style="background-color: white;">
+                    <div class="img-relative-one">
+                        <h1>Special trip - Fireboat
+                        </h1>
+                        <p>
+                            Be Adventurous with some serious speed , have a lot of fun and Get your adrenaline flowing
+                            with a thrilling 30 minutes of Fireboat experience
+                            <br>
+                            so book the Fireboat if you’re after some real bang for your adrenaline buck.
+                            <br>
+                            Get your adrenaline flowing with 30 minute Fireboat
+
+                        </p>
+
+                        <a href="Price.html">
+                            <button style="background-color:  #ec1d25; color: white; " class="btn btn-content">BOOK NOW
+                            </button>
+                        </a>
+
+                        <img class="img-absolute-one" src="./image/edge_right_wh.png">
+                        <img class="img-absolute-one-responsive" src="./image/edge_bottom_wh.png">
+
+
+                    </div>
+
+                </div>
+                <div class="col-md-6 p-0 img-one img-fouthr2 ">
+                    <img class="w-100" src="image/DSC_3902.jpg" />
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="map">
+        <ul>
+            <li onclick="myFunctionDXB()" class="btn btn-secondary">DBX</li>
+            <li onclick="myFunctionKSA()" class="btn btn-secondary">KSA</li>
+            <li onclick="myFunctionAUH()" class="btn btn-secondary">AUH</li>
+
+        </ul>
+
+        <iframe id="iframeone" class="w-100 "
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14445.952792747252!2d55.2017365!3d25.1529884!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x92112626640784b7!2sFireboat.2030!5e0!3m2!1sen!2sae!4v1672388630694!5m2!1sen!2sae"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="reviews" id="review">
+
+        <div class="info-review">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>
+                            Our exceptional customer service, love for the water and desire to share the incredible
+                            sights of the UAE.
+                            I recommend everyone to try these very interesting boats
+                            I thank the Fireboat team for this excellent experience
+                        </p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <br />
+                        <br />
+
+                        <h1>Ahmad</h1>
+                    </div>
+
+                    <div class="carousel-item">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>
+                            Oh, it was a very interesting experience, I liked very much the 360-degree drifting of the
+                            boat on the water, which makes the tour enjoyable, especially since you see in Dubai what
+                            you do not see in others. I thank the Fireboat team for this unforgettable experience.
+                        </p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <br />
+                        <br />
+
+                        <h1>Bader</h1>
+                    </div>
+                    <div class="carousel-item">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>
+                            I thank the captain and the crew because they created a beautiful and enjoyable
+                            atmosphere for us that made us happy with this experience, in addition to their great
+                            concern for safety instructions and viewing them after being kind..
+                        </p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <br />
+                        <br />
+                        <h1>Sami</h1>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <img class="righ-edge" src="./image/edge_right_blk70.png">
+            <img class="left-edge" src="./image/edge_left_blk70.png">
+            <img class="top-edge" src="./image/edge_top_blk70.png">
+            <img class="bottom-edge" src="./image/edge_bottom_blk70.png">
+        </div>
+
+    </div>
+    <div class="footer">
+        <div class="receive">
+            <form>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <h1>receive good things</h1>
+                    </div>
+                    <div class="col-lg-3">
+                        <input class="input-email" name="Name" placeholder="Enter your name" />
+                    </div>
+                    <div class="col-lg-3">
+                        <input class="input-email" name="Number" placeholder="Phone number" />
+
+                    </div>
+                    <div class="col-lg-3">
+                        <button type="button" onclick="sendEmail()">Subscribe</button>
+                    </div>
+                </div>
+
+            </form>
+            <img class="edge-top-receive" src="./image/edge_top_yl.png">
+        </div>
+        <div class="footer-bar">
+            <div class="row p-0 m-0">
+                <div class="col-md-4 text-center py-5 ">
+                    <img class="logo-footer" src="./image/logo (2).png">
+                </div>
+                <div class="col-sm-4">
+                    <h2>Navigate</h2>
+                    <ul class="ul-link">
+                        <li><a href="Crew.html">About us</a></li>
+                        <li><a href="#review">Testimonials</a></li>
+                        <li><a href="Faq.html">FAQs</a></li>
+                        <li><a href="Gallery.html">Media</a></li>
+                        <li><a href="Contact.html">Contact Us</a></li>
+                        <li><a href="Price.html">Price & packages</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <h2>Contact us</h2>
+                    <ul class="ul-link ul-contact">
+                        <li><i class="fa-sharp fa-solid fa-phone px-2"></i>+971 50 1285456</li>
+                        <li><i class="fa-solid fa-envelope px-2"></i>info@jetboat2030.com</li>
+                        <li><i class="fa-solid fa-location-dot px-2"></i>
+                            DUBAI : Fishing Harbor - Umm Suqeim 2 - Jumeirah St - Dubai
+
+                        </li>
+                        <li><i class="fa-solid fa-location-dot px-2"></i>
+                            JEDDAH : Al Kurnaysh Br Rd, Ash Shati, Jeddah 23613, Saudi Arabia
+
+                        </li>
+                        <li><i class="fa-solid fa-location-dot px-2"></i>
+                            ABU DHABI : next to Havana Cafe - Al Marina - Abu Dhabi - United Arab Emirates
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+            <img class="edge-top-footer" src="./image/edge_top_blk.png">
+        </div>
+        <div class="footer-media">
+            <h5>© 2023 Fireboat</h5>
+            <ul>
+                <li><a href="https://www.instagram.com/fireboat.2030"> <i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://vm.tiktok.com/ZS8MB1o38/"><i class="fa-brands fa-tiktok"></i></a></li>
+                <li><a href="https://www.snapchat.com/fireboat202030"><i class="fa-brands fa-snapchat"></i></a></li>
+
+            </ul>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
